@@ -35,17 +35,17 @@ if (count > 0)
     string[] NewStringArray(string[] UserArray, int count)
     {
         int newcount = 0;
-        string[] ArrayofShortString = new string[count];
+        string[] ShortStringArray = new string[count];
         for (int i = 0; i < UserArray.Length; i++)
         {
             if (UserArray[i].Length <= 3)
             {
-                ArrayofShortString[newcount] = UserArray[i];
+                ShortStringArray[newcount] = UserArray[i];
                 newcount++;
             }
 
         }
-        return ArrayofShortString;
+        return ShortStringArray;
     }
 
     void PrintArray(string[] TextArray)
